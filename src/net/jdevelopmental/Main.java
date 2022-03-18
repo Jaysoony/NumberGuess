@@ -16,12 +16,13 @@ public class Main {
 
         while (win == false) {
 
-            System.out.println("Guess a number between 1 and 1000: ");
+            System.out.println("Guess a number between 1 and " + numberToGuess + ":");
             guess = input.nextInt();
             numberofTries++;
 
             if (guess == numberToGuess) {
                 win = true;
+                System.out.println("You guessed the correct number! Good job!");
 
             } else if (guess < numberToGuess) {
                 System.out.println("Your guess is too low");
